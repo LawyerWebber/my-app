@@ -1,23 +1,22 @@
+import {BrowserRouter,Switch,Route} from 'react-router-dom';
+import Home from './views/Home'
+import About from './views/About'
+import News from './views/News'
+
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>react中用sass</h1>
+      <BrowserRouter>
+        <Switch>
+          <Route component={Home} path="/" exact></Route>
+          <Route component={About} path="/about"></Route>
+          <Route component={News} path="/news"></Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
