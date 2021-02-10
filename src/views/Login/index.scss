@@ -1,0 +1,19 @@
+body{
+    background-color: #03223f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #normal_login{
+        width: 400px;
+        height: 200px;
+        .goPage{
+            display: flex;
+            justify-content: space-between;
+            color:#fff
+        }
+        .goPage p:nth-child(1){
+            font-size: 18px;
+        }
+    }
+    
+}

@@ -1,20 +1,18 @@
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
-import Home from './views/Home'
-import About from './views/About'
-import News from './views/News'
+ 
+import Login from './views/Login/Index'
 
-import logo from './logo.svg';
 import './App.scss';
 
 function App() {
   return (
-    <div>
-      <h1>react中用sass</h1>
+    <div> 
       <BrowserRouter>
         <Switch>
-          <Route component={Home} path="/" exact></Route>
+          <Route component={Login} path="/login"></Route>
+          {/* <Route component={Home} path="/" exact></Route>
           <Route component={About} path="/about"></Route>
-          <Route component={News} path="/news"></Route>
+          <Route component={News} path="/news"></Route> */}
         </Switch>
       </BrowserRouter>
     </div>
