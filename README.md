@@ -51,3 +51,18 @@ plugins: [
 ## useContext 父子组件间传值
 ## useReducer 组件间数据共享，类似于redux
 https://www.yuque.com/senkita/reviews/gbipsa#g8Sfu
+
+
+# 配置环境
+http://www.html.cn/create-react-app/docs/adding-custom-environment-variables/
+开发，测试，生产（数据真实不能删除）
+create-react-app 创建的项目内置环境变量 NODE_ENV，可通过process.NODE_ENV读取当前的环境变量
+不同命令对应不同
+start，development
+test,test
+build,production
+实际项目开发中上线后也要区分多种环境
+build:pro
+build:dev
+build:test
+项目文件夹中新建 .env.dev 等三个文件REACT_APP_ 前缀不能修改，后面可以自己命名

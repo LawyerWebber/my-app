@@ -1,7 +1,7 @@
 import axios from 'axios';
-// 创建实例
+// 创建实例，baseURL 是拼接到请求地址的凭证
 const service = axios.create({
-    baseURL: 'devApi',
+    baseURL: process.env.REACT_APP_API,
     timeout: 5000,
   });
 

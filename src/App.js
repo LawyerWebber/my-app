@@ -9,7 +9,7 @@ function App() {
     <div> 
       <BrowserRouter>
         <Switch>
-          <Route component={Login} path="/login"></Route>
+          <Route component={Login} path="/"></Route>
           {/* <Route component={Home} path="/" exact></Route>
           <Route component={About} path="/about"></Route>
           <Route component={News} path="/news"></Route> */}
