@@ -4,6 +4,13 @@ react-router-dom提供了dom事件操作路由，开发中用这一个就可以�
 https://reactrouter.com/web/guides/quick-start
 
 hash 模式发布项目的时候后台不需要做路由重指向
+class组件
+withRouter 路由白名单，包裹组件后有push跳转方法
+function组件
+import {useHistory} from 'react-router-dom'
+/* 页面跳转 */
+  let history = useHistory();
+  history.push("/main");
 
 # node-sass
 yarn add sass-loader node-sass -D
@@ -66,3 +73,6 @@ build:pro
 build:dev
 build:test
 项目文件夹中新建 .env.dev 等三个文件REACT_APP_ 前缀不能修改，后面可以自己命名
+
+# 密码加密
+yarn add cypto-js

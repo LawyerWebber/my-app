@@ -1,7 +1,6 @@
 import React from "react";
 import { Form, Input, Button, Row, Col } from "antd";
-import { UserOutlined, LockOutlined } from "@ant-design/icons";
-import "./index.scss";
+import { UserOutlined, LockOutlined } from "@ant-design/icons"; 
 
 export default function RegForm(props) {
   const {flag,setFlag} = props;
@@ -12,7 +11,6 @@ export default function RegForm(props) {
     setFlag(!flag)
   }
   return (
-    <div>
       <Form
         name="normal_login"
         className="login-form"
@@ -83,6 +81,5 @@ export default function RegForm(props) {
           </Button>
         </Form.Item>
       </Form>
-    </div>
   );
 }
